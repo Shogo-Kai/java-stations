@@ -28,6 +28,14 @@ public class Main {
             this.category = category;
             this.tags = tags;
         }
+
+        float getPriceWithTax(boolean isKeigenzeiritu) {
+            if(isKeigenzeiritu) {
+                return this.price * 1.08F;
+            } else {
+                return this.price * 1.1F;
+            }
+        }
     }
     // ここまで
 }
